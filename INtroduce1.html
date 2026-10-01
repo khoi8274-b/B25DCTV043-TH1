@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Đăng Khôi</title>
+    <!-- Liên kết file CSS -->
+    <link rel="stylesheet" href="Introduce2.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Bài thực hành 01 </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div class="controls">
+            <button id="theme-toggle">Dark Mode</button>
+            <div class="hamburger">☰</div>
+        </div>
+    </header>
+
+    <section id="about" class="reveal">
+        <h2>Giới thiệu bản thân</h2>
+        <h1>Xin chào, em là Đăng Khôi 👋</h1>
+        <p>Hiện tại em là sinh viên năm 2 tại Học viện Công nghệ Bưu chính Viễn thông (PTIT) - Mã SV: B25DCTV043. Em đam mê với AI và xử lý thuật toán. Em luôn nỗ lực ứng dụng kiến thức vào thực tế thông qua các dự án từ web frontend đến nhận diện cử chỉ thời gian thực.</p>
+    </section>
+
+    <section id="skills" class="reveal">
+        <h2>Kỹ năng</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Ngôn ngữ lập trình</h3>
+                <p>Nền tảng vững chắc về thuật toán và cấu trúc dữ liệu.</p>
+                <span class="skill-tag">Python (COS Pro Level 2)</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">C++</span>
+            </div>
+            <div class="card">
+                <h3>AI & Computer Vision</h3>
+                <p>Nghiên cứu và ứng dụng các mô hình học máy vào xử lý ảnh và video.</p>
+                <span class="skill-tag">OpenCV</span>
+                <span class="skill-tag">MediaPipe</span>
+                <span class="skill-tag">TensorFlow</span>
+            </div>
+            <div class="card">
+                <h3>Web & Mobile Dev</h3>
+                <p>Thiết kế giao diện tương tác và phát triển ứng dụng di động đa nền tảng.</p>
+                <span class="skill-tag">HTML5/CSS3</span>
+                <span class="skill-tag">DOM Manipulation</span>
+                <span class="skill-tag">Kivy/KivyMD</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="reveal">
+        <h2>Dự án nổi bật</h2>
+        
+        <!-- THANH TÌM KIẾM DỰ ÁN BẮT ĐẦU -->
+        <div class="search-container">
+            <input type="text" id="project-search" placeholder="🔍 Tìm kiếm dự án (VD: AIoT, Kivy, Python...)" autocomplete="off">
+        </div>
+        <!-- THANH TÌM KIẾM DỰ ÁN KẾT THÚC -->
+
+        <div class="grid-container" id="project-grid">
+            <div class="card project-card">
+                <h3>1. Signbridge App</h3>
+                <p>Ứng dụng Android viết bằng Python (Kivy) giúp nhận diện và dịch Ngôn ngữ Ký hiệu Việt Nam theo thời gian thực.</p>
+            </div>
+            <div class="card project-card">
+                <h3>2. AIoT Wearable Camera</h3>
+                <p>Thiết kế hệ thống camera đeo tay truyền dữ liệu video thời gian thực tích hợp với các mô hình Computer Vision.</p>
+            </div>
+            <div class="card project-card">
+                <h3>3. Cosplay Store Manager</h3>
+                <p>Xây dựng hệ thống logic quy định giao dịch, xác thực khách hàng và chính sách cho cửa hàng cho thuê trang phục.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="reveal">
+        <h2>Liên hệ</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Họ và tên của bạn" required>
+            <input type="email" id="email" placeholder="Email liên hệ" required>
+            <textarea id="message" rows="4" placeholder="Nội dung tin nhắn..." required></textarea>
+            <button type="submit">Gửi tin nhắn</button>
+            <p id="form-msg" style="margin-top: 10px; color: var(--primary-color); display: none;"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Đăng Khôi - PTIT. All rights reserved.</p>
+    </footer>
+
+    <!-- Liên kết file JavaScript -->
+    <script src="Introduce3.js"></script>
+</body>
+</html>
